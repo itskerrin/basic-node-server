@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
       break;
   }
 
-  // Read file
+  // Read the file
   fs.readFile(filePath, (err, content) => {
     if (err) {
       if (err.code === 'ENOENT') {
